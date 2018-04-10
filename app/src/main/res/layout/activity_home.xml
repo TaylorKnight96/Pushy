@@ -18,11 +18,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/middleView"
-            android:layout_below="@+id/topToolBar">
-            <include layout="@layout/center_viewpage"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/center_viewpage" />
         </RelativeLayout>
 
         <include layout="@layout/bottom_navigation_view"/>

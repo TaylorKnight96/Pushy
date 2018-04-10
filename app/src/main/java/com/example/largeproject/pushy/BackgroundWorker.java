@@ -33,8 +33,8 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>{
     protected String doInBackground(String... params) {
         String type = params[0];
 
-        String login_url = "http://10.0.2.2/app/login.php";
-        String register_url = "http://10.0.2.2/app/register.php";
+        String login_url = "http://172.16.121.190/login.php";
+        String register_url = "http://172.16.121.190/register.php";
 
 
         if (type.equals("login")) {
@@ -133,7 +133,8 @@ public class BackgroundWorker extends AsyncTask<String, Void, String>{
     @Override
     protected void onPreExecute() {
         alertDialog = new AlertDialog.Builder(context).create();
-    }
+        alertDialog.setTitle("Login status");
+ }
 
     @Override
     protected void onPostExecute(String result) {

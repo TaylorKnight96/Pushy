@@ -60,7 +60,7 @@
             android:id="@+id/askToRegister"
             style="@style/textView_style"
             android:text="@string/textRegister"
-            android:onClick="OpenRegister"/>
+            android:onClick="OnRegister"/>
     </LinearLayout>
 
 

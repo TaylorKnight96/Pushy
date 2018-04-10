@@ -35,4 +35,10 @@ public class LoginActivity extends AppCompatActivity {
         backgroundWorker.execute(type, username, password);
 
     }
+
+    public void OnRegister(View view)
+    {
+        Intent registerIntent = new Intent(this, Register.class);
+        startActivity(registerIntent);
+    }
 }
